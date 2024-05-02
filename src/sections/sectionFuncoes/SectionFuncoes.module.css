@@ -1,0 +1,100 @@
+.sectionMain {
+  width: 100%;
+  background: #004aad;
+}
+.sectionPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+.sectionPrincipal .divLeft {
+  width: 30%;
+}
+.sectionPrincipal .divLeft img {
+  width: 100%;
+}
+.sectionPrincipal .divRigth {
+  max-width: 55%;
+  text-align: left;
+  color: white;
+}
+.sectionPrincipal .divRigth h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.sectionPrincipal .divRigth p {
+  font-size: 20px;
+}
+.sectionPrincipal .divRigth .divMensagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 55px 0;
+}
+.sectionPrincipal .divRigth .divMensagem span {
+  color: chartreuse;
+}
+.sectionPrincipal .divRigth .divMensagem p {
+  font-size: 18px;
+}
+.sectionPrincipal .divRigth .divButton {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.sectionPrincipal .divRigth .divButton a {
+  background: white;
+  color: #004aad;
+  width: 300px;
+  padding: 5px 0;
+  max-width: 400px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+.sectionPrincipal .divRigth .divButton p {
+  font-size: 11px;
+}
+@media (max-width: 940px) {
+  .sectionPrincipal {
+    flex-direction: column;
+  }
+  .sectionPrincipal .divLeft {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .sectionPrincipal .divRigth {
+    width: 100%;
+    text-align: center;
+    max-width: inherit;
+  }
+  .sectionPrincipal .divRigth .divMensagem {
+    justify-content: center;
+  }
+  .sectionPrincipal .divRigth .divButton {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .sectionPrincipal .divRigth h2 {
+    font-size: 35px;
+  }
+  .sectionPrincipal .divRigth p {
+    font-size: 18px;
+  }
+  .sectionPrincipal .divRigth .divMensagem {
+    justify-content: center;
+  }
+  .sectionPrincipal .divRigth .divMensagem p {
+    font-size: 14px;
+  }
+  .sectionPrincipal .divRigth .divButton {
+    width: 100%;
+  }
+}

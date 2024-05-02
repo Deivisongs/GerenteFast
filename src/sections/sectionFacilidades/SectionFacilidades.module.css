@@ -1,0 +1,74 @@
+.sectionMain {
+  width: 100%;
+  background: #f3f3f3;
+}
+.sectionPrincipal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 15px;
+}
+.sectionPrincipal .divTitle {
+  display: inline-block;
+}
+.sectionPrincipal .divTitle h2 {
+  font-size: 45px;
+}
+.sectionPrincipal .divTitle hr {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px solid #004aad;
+  margin-bottom: 110px;
+}
+.sectionPrincipal .divCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+}
+.sectionPrincipal .divCards .card {
+  min-width: 290px;
+  padding: 30px;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  color: #f3f3f3;
+  background: #004aad;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+}
+.sectionPrincipal .divCards .card .divIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  color: #004aad;
+}
+.sectionPrincipal .divCards .card .divIcon span {
+  font-size: 60px;
+}
+.sectionPrincipal .divCards .card h3 {
+  font-size: 30px;
+}
+.sectionPrincipal .divCards .card p {
+  font-size: 15px;
+}
+@media (max-width: 960px) {
+  .sectionPrincipal .divCards {
+    margin: 0 auto;
+  }
+  .sectionPrincipal .divCards .card {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .sectionPrincipal .divTitle h2 {
+    font-size: 35px;
+  }
+}

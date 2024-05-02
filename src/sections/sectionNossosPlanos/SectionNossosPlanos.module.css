@@ -1,0 +1,179 @@
+.sectionMain {
+  width: 100%;
+  background: #f3f3f3;
+}
+.sectionPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+.sectionPrincipal .divTitle {
+  display: inline-block;
+}
+.sectionPrincipal .divTitle h2 {
+  font-size: 45px;
+}
+.sectionPrincipal .divTitle hr {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px solid #004aad;
+  margin-bottom: 110px;
+}
+.sectionPrincipal .divPlanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+.sectionPrincipal .divPlanos .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 20px 20px;
+  width: 28%;
+  height: fit-content;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.194);
+}
+#cardPrincipal {
+  padding: 50px 20px 20px 20px;
+}
+#cardPrincipal .divIcon {
+  background: #001c42;
+}
+#cardPrincipal .divIcon span {
+  color: #ff7300;
+}
+#cardPrincipal h3 {
+  margin-bottom: 10px;
+}
+#cardPrincipal > p {
+  margin-bottom: 15px;
+}
+#cardPrincipal > a {
+  background: #ff7300;
+}
+.sectionPrincipal .divPlanos .card .divIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  margin-bottom: 15px;
+}
+.sectionPrincipal .divPlanos .card .divIcon span {
+  color: #001c42;
+  font-size: 40px;
+}
+.sectionPrincipal .divPlanos .card h3 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #001c42;
+}
+.sectionPrincipal .divPlanos .card > p {
+  font-size: 14px;
+  color: #424242cc;
+}
+.sectionPrincipal .divPlanos .card .divBeneficios {
+  width: fit-content;
+  margin: 15px 0;
+}
+.sectionPrincipal .divPlanos .card .divBeneficios li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.sectionPrincipal .divPlanos .card .divBeneficios li span {
+  color: rgb(0, 163, 0);
+}
+.sectionPrincipal .divPlanos .card .divBeneficios li p {
+  text-align: left;
+  font-size: 13px;
+}
+.sectionPrincipal .divPlanos .card .divPreco {
+  width: 100%;
+}
+.sectionPrincipal .divPlanos .card .divPromo {
+  width: 70px;
+  background: #ff000033;
+  height: fit-content;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+.sectionPrincipal .divPlanos .card p {
+  font-size: 12px;
+}
+.sectionPrincipal .divPlanos .card hr {
+  width: 110%;
+  position: relative;
+  top: -10px;
+  left: -3px;
+  border: 1px solid #424242;
+  border-top: none;
+  transform: rotateZ(-10deg);
+}
+.sectionPrincipal .divPlanos .card .preco {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.sectionPrincipal .divPlanos .card .preco .pFixo {
+  color: #001c42;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.sectionPrincipal .divPlanos .card .preco .pPreco {
+  color: #001c42;
+  font-size: 56px;
+  font-weight: 600;
+  position: relative;
+  top: +20px;
+}
+.sectionPrincipal .divPlanos .card a {
+  margin-top: 25px;
+  padding: 8px 0;
+  width: 100%;
+  background: #004aad;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.sectionPrincipal .divPlanos .card .divBeneficios .iconClose span {
+  color: #cf0000;
+}
+
+@media (max-width: 1000px) {
+  .sectionPrincipal .divPlanos {
+    max-width: 80%;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .sectionPrincipal .divPlanos .card {
+    min-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .sectionPrincipal .divTitle h2 {
+    font-size: 35px;
+  }
+  .sectionPrincipal .divPlanos {
+    max-width: 100%;
+  }
+  .sectionPrincipal .divPlanos .card {
+    min-width: 100%;
+  }
+}

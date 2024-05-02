@@ -1,0 +1,263 @@
+.sectionMain {
+  width: 100%;
+  background: #f3f3f3;
+}
+.sectionMain .btnInicio {
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #004aad;
+  box-shadow: 0 0 5px black;
+}
+.sectionMain .btnInicio span {
+  font-size: 40px;
+  color: white;
+}
+.sectionPrincipal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 0 0;
+}
+.header .divLogo:hover img {
+  animation: gira 10s ease infinite;
+}
+.header .divLogo a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.header .divLogo a img {
+  width: 50px;
+}
+.header .divLogo a p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .divLogo a p strong {
+  font-style: italic;
+  color: #004aad;
+}
+.header button {
+  display: none;
+  color: #004aad;
+  border: none;
+  background: transparent;
+}
+.header button span {
+  font-size: 40px;
+}
+.header .nav {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.header .nav li a {
+  border-bottom: 0px solid transparent;
+  transition: 300ms;
+}
+.header .nav .btnClose {
+  display: none;
+}
+.header .nav li:hover a {
+  border-bottom: 3px solid #004aad;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.header .nav .sac {
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background: #004aad;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
+}
+.header .nav .sac:hover a {
+  border: none;
+  color: #004aad;
+}
+.header .nav .sac:hover {
+  background: white;
+  box-shadow: 0px 0px 5px #004aad;
+}
+.header .nav .sac a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  color: white;
+}
+
+/* Banner Principal*/
+
+.bannerPrincipal {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.bannerPrincipal h1 {
+  width: 53vw;
+  max-width: 770px;
+  min-width: 500px;
+  font-size: 60px;
+  text-align: left;
+}
+.bannerPrincipal h1 strong {
+  color: #004aad;
+}
+.bannerPrincipal .divLogos {
+  width: 400px;
+  min-width: 400px;
+}
+.bannerPrincipal .divLogos .imgBanner {
+  position: relative;
+  top: -35px;
+  width: 100%;
+}
+.bannerPrincipal .logoSolto {
+  position: relative;
+  width: 30px;
+}
+.bannerPrincipal #logoA {
+  right: 180px;
+  top: 190px;
+  animation: gira 20s ease infinite;
+}
+.bannerPrincipal #logoB {
+  width: 50px;
+  right: 180px;
+  top: 50px;
+  animation: gira 15s ease infinite;
+}
+.bannerPrincipal #logoC {
+  right: -145px;
+  top: 120px;
+  animation: gira 9s ease infinite;
+}
+@keyframes gira {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@media (max-width: 940px) {
+  .header {
+    padding: 10px 0 0 0;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header button {
+    display: inline-block;
+  }
+  .header .nav {
+    z-index: 1000;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.229);
+  }
+  .header .nav li {
+    width: 100%;
+    height: 90px;
+    background: white;
+  }
+  .header .nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .header .nav .btnClose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #004aad;
+  }
+  .bannerPrincipal {
+    justify-content: center;
+  }
+  .bannerPrincipal h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .bannerPrincipal .divLogos {
+    height: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .header .divLogo a img {
+    display: none;
+  }
+  .bannerPrincipal h1 {
+    min-width: 100%;
+    font-size: 35px;
+  }
+  .bannerPrincipal .divLogos {
+    width: 300px;
+    min-width: 300px;
+    height: 380px;
+  }
+  .bannerPrincipal #logoA {
+    right: 100px;
+    top: 190px;
+  }
+  .bannerPrincipal #logoB {
+    width: 50px;
+    right: 130px;
+    top: 30px;
+  }
+  .bannerPrincipal #logoC {
+    right: -110px;
+    top: 120px;
+  }
+}
+@media (max-width: 350px) {
+  .bannerPrincipal .divLogos {
+    width: 250px;
+    min-width: 250px;
+    height: 330px;
+  }
+  .bannerPrincipal #logoA {
+    width: 20px;
+    right: 95px;
+    top: 190px;
+  }
+  .bannerPrincipal #logoB {
+    width: 35px;
+    right: 110px;
+    top: 30px;
+  }
+  .bannerPrincipal #logoC {
+    right: -100px;
+    top: 120px;
+  }
+}

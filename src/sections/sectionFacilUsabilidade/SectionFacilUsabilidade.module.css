@@ -1,0 +1,81 @@
+.sectionMain {
+  width: 100%;
+  background: #f3f3f3;
+}
+.sectionPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+.sectionPrincipal .divLeft {
+  max-width: 55%;
+  text-align: left;
+}
+.sectionPrincipal .divLeft h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.sectionPrincipal .divLeft p {
+  font-size: 20px;
+}
+.sectionPrincipal .divLeft .divMensagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 55px 0;
+}
+.sectionPrincipal .divLeft .divMensagem span {
+  color: #004aad;
+}
+.sectionPrincipal .divLeft .divMensagem p {
+  font-size: 18px;
+}
+.sectionPrincipal .divLeft a {
+  background: #004aad;
+  color: white;
+  width: 300px;
+  padding: 7px 20px;
+  max-width: 400px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+.sectionPrincipal .divRigth {
+  width: 37%;
+}
+.sectionPrincipal .divRigth img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .sectionPrincipal {
+    flex-direction: column-reverse;
+    padding: 100px 15px 20px 15px;
+  }
+  .sectionPrincipal .divRigth {
+    width: 70%;
+  }
+  .sectionPrincipal .divLeft {
+    margin-top: 15px;
+    width: 100%;
+    max-width: inherit;
+    text-align: center;
+  }
+  .sectionPrincipal .divLeft .divMensagem {
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .sectionPrincipal .divLeft h2 {
+    font-size: 35px;
+  }
+  .sectionPrincipal .divLeft p {
+    font-size: 18px;
+  }
+  .sectionPrincipal .divLeft .divMensagem p {
+    font-size: 14px;
+  }
+}
