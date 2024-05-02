@@ -47,7 +47,7 @@ export default function SectionPrincipal() {
         <header className={style.header} id="inicio">
           <div className={style.divLogo}>
             <a href="#">
-              <img src={logo} alt="" />
+              <img src={logo} alt="imagem logo" />
               <p>
                 Gerente<strong>Fast</strong>
               </p>
@@ -111,23 +111,23 @@ export default function SectionPrincipal() {
           <div className={style.divLogos}>
             <img
               src={logo}
-              alt=""
+              alt="imagem logo giratoria"
               className={style.logoSolto}
               id={style.logoA}
             />
             <img
               src={logo}
-              alt=""
+              alt="imagem logo giratoria"
               className={style.logoSolto}
               id={style.logoB}
             />
             <img
               src={logo}
-              alt=""
+              alt="imagem logo giratoria"
               className={style.logoSolto}
               id={style.logoC}
             />
-            <img src={imgBanner} className={style.imgBanner} alt="" />
+            <img src={imgBanner} className={style.imgBanner} alt="imagem grande banner" />
           </div>
         </div>
       </section>

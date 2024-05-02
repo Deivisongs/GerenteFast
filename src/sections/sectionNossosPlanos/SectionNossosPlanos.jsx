@@ -63,7 +63,7 @@ export default function SectionNossosPlanos() {
               </div>
             </div>
 
-            <a href="#">Contratar</a>
+            <a href="https://pag.ae/7-uud7GM3" target="_blank">Contratar</a>
           </div>
           <div className={style.card} id={style.cardPrincipal}>
             <div className={style.divIcon}>
@@ -119,7 +119,7 @@ export default function SectionNossosPlanos() {
               </div>
             </div>
 
-            <a href="#">Contratar</a>
+            <a href="https://pag.ae/7-uufnQEq" target="_blank">Contratar</a>
           </div>
           <div className={style.card}>
             <div className={style.divIcon}>
@@ -175,7 +175,7 @@ export default function SectionNossosPlanos() {
               </div>
             </div>
 
-            <a href="#">Contratar</a>
+            <a href="https://pag.ae/7-uugnyjr" target="_blank">Contratar</a>
           </div>
         </div>
       </section>
