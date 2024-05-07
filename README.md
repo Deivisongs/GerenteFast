@@ -45,7 +45,7 @@ Na tela de funcionários, o gestor pode cadastrar novos funcionários, editar in
 
 ![image](https://github.com/Deivisongs/GerenteFast/assets/97059867/20ed35d1-3a6c-4541-97f4-548fa5aebf38)
 
-### tela Alterar Cadastro
+### Tela Alterar Cadastro
 Nesta tela, o gestor pode modificar seu próprio cadastro, como nome de usuário e senha. O nome só pode ser alterado por um usuário administrador.
 
 ![image](https://github.com/Deivisongs/GerenteFast/assets/97059867/e60a5c7a-537f-4fda-9f0d-8f75971caaec)
